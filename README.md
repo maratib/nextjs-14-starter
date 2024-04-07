@@ -15,7 +15,7 @@ export class CreateUserDTO {
   email: string;
 }
 
-// pages/api/user/[[...params]].ts
+// src/pages/api/user/[[...params]].ts
 
 import { CreateUserDTO } from "@/lib/dto/usersDto";
 import { Body, createHandler, Get, HttpCode, Param, Post, ValidationPipe } from "next-api-decorators";
@@ -39,6 +39,20 @@ class UserHandler {
 }
 
 export default createHandler(UserHandler);
+
+// /src/middleware.ts
+import { NextResponse } from "next/server";
+import type { NextRequest } from "next/server";
+
+export function middleware(request: NextRequest) {
+  console.log("from Middleware");
+}
+
+// See "Matching Paths" below to learn more
+export const config = {
+  matcher: "/api/:path*",
+};
+
 
 ```
 
