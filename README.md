@@ -16,7 +16,6 @@ export class CreateUserDTO {
 }
 
 // src/pages/api/user/[[...params]].ts
-
 import { CreateUserDTO } from "@/lib/dto/usersDto";
 import { Body, createHandler, Get, HttpCode, Param, Post, ValidationPipe } from "next-api-decorators";
 
