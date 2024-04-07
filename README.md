@@ -14,7 +14,9 @@ export class CreateUserDTO {
   @IsEmail()
   email: string;
 }
+```
 
+```javascript
 // src/pages/api/user/[[...params]].ts
 import { CreateUserDTO } from "@/lib/dto/usersDto";
 import { Body, createHandler, Get, HttpCode, Param, Post, ValidationPipe } from "next-api-decorators";
@@ -38,7 +40,9 @@ class UserHandler {
 }
 
 export default createHandler(UserHandler);
+```
 
+```javascript
 // /src/middleware.ts
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
@@ -51,8 +55,6 @@ export function middleware(request: NextRequest) {
 export const config = {
   matcher: "/api/:path*",
 };
-
-
 ```
 
 ### git commands
