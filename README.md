@@ -1,5 +1,11 @@
 # Next.js 14 Starter
 
+### Next Logging
+
+```bash
+yarn add winston
+```
+
 ### Next API Decorator
 
 ```bash
@@ -76,7 +82,11 @@ git branch -r
 # get to see all branches
 git branch -a
 
+# delete branch locally
+git branch -d localBranchName
 
+# delete branch remotely
+git push origin --delete remoteBranchName
 
 ```
 
