@@ -15,16 +15,22 @@
     "test": "tsx src/drizzle/test.ts"
   },
   "dependencies": {
+    "@radix-ui/react-slot": "^1.0.2",
     "class-transformer": "^0.5.1",
     "class-validator": "^0.14.1",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.0",
     "dotenv": "^16.4.5",
     "drizzle-orm": "^0.30.7",
+    "lucide-react": "^0.367.0",
     "next": "14.1.4",
     "next-api-decorators": "^2.0.2",
     "path-to-regexp": "^6.2.2",
     "pg": "^8.11.5",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "tailwind-merge": "^2.2.2",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@faker-js/faker": "^8.4.1",

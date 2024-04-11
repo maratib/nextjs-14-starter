@@ -1,5 +1,11 @@
 # Next.js 14 Starter
 
+### Next Shadcn/ui
+
+```bash
+npx shadcn-ui@latest init
+```
+
 ### Next Drizzle
 
 ```bash
