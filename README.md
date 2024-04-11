@@ -4,6 +4,8 @@
 
 ```bash
 npx shadcn-ui@latest init
+
+npx shadcn-ui@latest add button
 ```
 
 ### Next Drizzle
@@ -112,3 +114,4 @@ git push origin --delete remoteBranchName
 - next-fresh
 - next-api-decorator
 - next-drizzle
+- next-shadcn
