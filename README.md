@@ -21,6 +21,7 @@ yarn add -D drizzle-kit @types/pg @faker-js/faker tsx
  "db:migrate": "tsx src/drizzle/migrate.ts",
  "db:introspect": "drizzle-kit introspect:pg",
  "db:seed": "tsx src/drizzle/seed.ts",
+ "db": "yarn db:schema && yarn db:migrate && yarn db:seed",
  "studio": "drizzle-kit studio"
 
 

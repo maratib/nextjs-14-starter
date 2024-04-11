@@ -6,7 +6,7 @@ import { db } from "./db";
 import { users, type NewUser, posts, type NewPost } from "./schema";
 
 const main = async () => {
-  console.log("Seeding starts ...");
+  console.log("Seeding started ...");
   const data: NewUser[] = [];
 
   // Manual Push
