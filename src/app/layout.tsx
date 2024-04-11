@@ -23,11 +23,10 @@ export default function RootLayout({
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
-          inter.variable,
-          inter.className
+          inter.variable
         )}
       >
-        <h1>Base Layout</h1>
+        <h1>Root Layout</h1>
         {children}
       </body>
     </html>

@@ -7,7 +7,7 @@ export default function VendorLayout({
 }>) {
   return (
     <Fragment>
-      <h1>Vendor Layout</h1>
+      <h1>Customer Layout</h1>
       {children}
     </Fragment>
   );
