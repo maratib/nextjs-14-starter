@@ -1,9 +1,19 @@
 # Next.js 14 Starter
 
-### Next Logging
+### Next Drizzle
 
 ```bash
-yarn add winston
+yarn add drizzle-orm pg
+yarn add -D drizzle-kit @types/pg @faker-js/faker tsx
+
+# add to scripts of package.json
+ "db:schema": "drizzle-kit generate:pg",
+ "db:migrate": "tsx src/drizzle/migrate.ts",
+ "db:introspect": "drizzle-kit introspect:pg",
+ "db:seed": "tsx src/drizzle/seed.ts",
+ "studio": "drizzle-kit studio"
+
+
 ```
 
 ### Next API Decorator
