@@ -1,5 +1,11 @@
 # Next.js 14 Starter
 
+### Next Jest
+
+```bash
+yarn add -D jest jest-environment-jsdom @types/jest  @testing-library/react @testing-library/jest-dom
+```
+
 ### Next Drizzle
 
 ```bash
@@ -12,6 +18,7 @@ yarn add -D drizzle-kit @types/pg @faker-js/faker tsx
  "db:introspect": "drizzle-kit introspect:pg",
  "db:seed": "tsx src/drizzle/seed.ts",
  "studio": "drizzle-kit studio"
+
 
 
 ```
@@ -104,3 +111,4 @@ git push origin --delete remoteBranchName
 
 - next-fresh
 - next-api-decorator
+- next-drizzle
