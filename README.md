@@ -1,11 +1,5 @@
 # Next.js 14 Starter
 
-### Next Jest
-
-```bash
-yarn add -D jest jest-environment-jsdom @types/jest  @testing-library/react @testing-library/jest-dom
-```
-
 ### Next Drizzle
 
 ```bash
