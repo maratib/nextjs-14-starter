@@ -2,10 +2,6 @@
 
 ### Next Layouts
 
-```bash
-
-```
-
 ### Next Shadcn/ui
 
 ```bash
@@ -121,3 +117,4 @@ git push origin --delete remoteBranchName
 - next-api-decorator
 - next-drizzle
 - next-shadcn
+- next-layouts
