@@ -16,6 +16,7 @@ export const users = pgTable("users", {
   email: varchar("email", { length: 150 }).unique(),
   role: rolesEnum("role").default("USER").notNull(),
   active: boolean("active").default(false),
+  del: boolean("del").default(false),
   createdAt: timestamp("created_at").defaultNow().notNull(),
   updatedAt: timestamp("updated_at").defaultNow().notNull(),
 });
@@ -30,6 +31,7 @@ export const posts = pgTable("posts", {
     .notNull()
     .references(() => users.id),
   active: boolean("active").default(true),
+  del: boolean("del").default(false),
   createdAt: timestamp("created_at").defaultNow().notNull(),
   updatedAt: timestamp("updated_at").defaultNow().notNull(),
 });
