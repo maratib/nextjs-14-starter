@@ -1,3 +1,5 @@
+import { Footer } from "@/components/footer";
+import { Header } from "@/components/header";
 import { Fragment } from "react";
 
 export default function VendorLayout({
@@ -6,9 +8,12 @@ export default function VendorLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <Fragment>
-      <h1>Customer Layout</h1>
-      {children}
-    </Fragment>
+    <>
+      <main className="container mx-auto min-h-screen">
+        <Header />
+        {children}
+      </main>
+      <Footer />
+    </>
   );
 }

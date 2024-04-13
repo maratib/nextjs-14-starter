@@ -1,4 +1,7 @@
-import { Fragment } from "react";
+import { ModeToggle } from "@/components/ui/mode-toggle";
+import { ThemeProvider } from "@/components/ui/theme-provider";
+import { VendorHeader } from "@/components/vendor/vendorHeader";
+import { VendorFooter } from "@/components/vendor/vendorFooter";
 
 export default function VendorLayout({
   children,
@@ -6,9 +9,19 @@ export default function VendorLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <Fragment>
-      <h1>Vendor Layout</h1>
-      {children}
-    </Fragment>
+    <>
+      <ThemeProvider
+        attribute="class"
+        defaultTheme="system"
+        enableSystem
+        disableTransitionOnChange
+      >
+        <main className="container mx-auto min-h-screen">
+          <VendorHeader />
+          {children}
+        </main>
+        <VendorFooter />
+      </ThemeProvider>
+    </>
   );
 }

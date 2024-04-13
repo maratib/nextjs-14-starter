@@ -28,16 +28,7 @@ export default function RootLayout({
           inter.variable
         )}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <ModeToggle />
-          <h1>Root Layout</h1>
-          {children}
-        </ThemeProvider>
+        {children}
       </body>
     </html>
   );

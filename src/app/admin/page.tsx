@@ -11,7 +11,7 @@ export default async function Home() {
 
   return (
     <main>
-      <h1 className="text-red-600">Hello</h1>
+      <h1 className="text-red-600">Admin Dashboard Page</h1>
       <Button>Click me</Button>
     </main>
   );

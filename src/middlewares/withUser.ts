@@ -9,7 +9,7 @@ export const withUser: MiddlewareFactory = (next) => {
   return async (request: NextRequest, _next: NextFetchEvent) => {
     const pathname = request.nextUrl.pathname;
 
-    console.log("withUser Middleware called! ");
+    // console.log("withUser Middleware called! ");
 
     // if (["/api"]?.some((path) => pathname.startsWith(path))) {
     //   const userId = request.cookies.get("userId");

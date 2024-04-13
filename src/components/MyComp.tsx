@@ -1,4 +1,4 @@
-import { UserDao } from "@/lib/dao/userDao";
+import { UserModel } from "@/lib/models/userModel";
 import React, { FC } from "react";
 
 type Props = {
@@ -9,7 +9,7 @@ const MyComp: FC<Props> = async ({ name }) => {
   let users = null;
 
   try {
-    users = await new UserDao().getUsers();
+    users = await new UserModel().getUsers();
   } catch (error) {}
 
   return (
